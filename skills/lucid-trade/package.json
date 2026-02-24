@@ -1,0 +1,10 @@
+{
+  "name": "lucid-trade",
+  "version": "4.0.0",
+  "description": "Crypto trading intelligence skills for AI agents — technical analysis, position sizing, risk management, backtesting",
+  "type": "module",
+  "license": "MIT",
+  "author": "Lucid Foundation",
+  "keywords": ["agentskills", "skills", "crypto", "trading", "defi", "technical-analysis", "lucid-foundation"],
+  "files": ["skills", "HEARTBEAT.md", "skill.yaml", ".claude-plugin", "openclaw.plugin.json", "README.md", "LICENSE"]
+}

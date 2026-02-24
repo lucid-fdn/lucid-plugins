@@ -1,0 +1,12 @@
+{
+  "id": "lucid-trade",
+  "name": "Lucid Trade",
+  "version": "4.0.0",
+  "description": "Crypto trading intelligence skills",
+  "skills": [
+    "skills/market-analysis",
+    "skills/trading",
+    "skills/portfolio",
+    "skills/backtesting"
+  ]
+}
