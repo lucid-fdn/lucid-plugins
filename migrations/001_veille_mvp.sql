@@ -1,0 +1,5 @@
+create table if not exists tenants (id text primary key, name text not null);
+create table if not exists sources (id bigint generated always as identity primary key, tenant_id text not null, url text not null, trust_score int not null default 50, enabled boolean not null default true, created_at timestamptz not null default now());
+create table if not exists items (id bigint generated always as identity primary key, tenant_id text not null, canonical_url text not null, title text, published_at timestamptz, source text, storage_text_path text, status text not null default 'new', created_at timestamptz not null default now(), unique (tenant_id, canonical_url));
+create table if not exists digests (id bigint generated always as identity primary key, tenant_id text not null, date date not null, storage_md_path text not null, storage_html_path text not null, created_at timestamptz not null default now(), unique (tenant_id, date));
+insert into tenants (id, name) values ('personal','personal') on conflict (id) do nothing;

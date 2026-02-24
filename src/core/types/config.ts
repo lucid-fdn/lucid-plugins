@@ -1,0 +1,30 @@
+export interface PluginConfig {
+  supabaseUrl: string;
+  supabaseKey: string;
+  tenantId: string;
+  timezone: string;
+  language: string;
+  fetchCron: string;
+  dailyDigestCron: string;
+  weeklyDigestCron: string;
+  autoPublish: boolean;
+  digestTrustThreshold: number;
+  digestMaxItems: number;
+  twitterBearerToken?: string;
+  twitterApiKey?: string;
+  twitterApiSecret?: string;
+  twitterAccessToken?: string;
+  twitterAccessSecret?: string;
+  ghostUrl?: string;
+  ghostAdminApiKey?: string;
+  wordpressUrl?: string;
+  wordpressUsername?: string;
+  wordpressPassword?: string;
+  linkedinAccessToken?: string;
+  devtoApiKey?: string;
+  telegramBotToken?: string;
+  telegramChatId?: string;
+  slackWebhookUrl?: string;
+  discordWebhookUrl?: string;
+  saasMode?: boolean;
+}
