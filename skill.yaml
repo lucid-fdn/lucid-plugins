@@ -1,0 +1,22 @@
+lucid: "1.0"
+name: lucid-trade
+version: "4.0.0"
+description: "Crypto trading intelligence — technical analysis, position sizing, risk management, backtesting, portfolio tracking"
+author: "Lucid Foundation"
+license: "MIT"
+
+requires:
+  mcps: []
+  env: []
+
+skills:
+  - market-analysis
+  - trading
+  - portfolio
+  - backtesting
+
+heartbeat: HEARTBEAT.md
+
+platforms:
+  claude-code: true
+  openclaw: true
