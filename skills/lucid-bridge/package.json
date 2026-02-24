@@ -1,0 +1,52 @@
+{
+  "name": "@raijinlabs/bridge",
+  "version": "1.0.0",
+  "description": "Lucid Bridge — Cross-Platform Startup Ops MCP",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "bridge-mcp": "dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "integration",
+    "sync",
+    "notion",
+    "linear",
+    "slack",
+    "github",
+    "workflow",
+    "automation",
+    "mcp",
+    "startup",
+    "ops"
+  ],
+  "author": "Raijin Labs",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@notionhq/client": "^2.2.15",
+    "@linear/sdk": "^28.0.0",
+    "@slack/web-api": "^7.8.0",
+    "@octokit/rest": "^21.1.1",
+    "bottleneck": "^2.19.5",
+    "@supabase/supabase-js": "^2.49.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5",
+    "prettier": "^3.5.3"
+  }
+}
