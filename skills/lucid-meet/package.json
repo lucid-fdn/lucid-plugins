@@ -1,0 +1,54 @@
+{
+  "name": "@raijinlabs/meet",
+  "version": "1.0.0",
+  "description": "AI-powered meeting notes, action item extraction, decision tracking, follow-up automation, and meeting analytics — MCP server + OpenClaw plugin",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "meet-mcp": "./dist/bin.js"
+  },
+  "exports": {
+    ".": { "import": "./dist/index.js", "types": "./dist/index.d.ts" },
+    "./mcp": { "import": "./dist/mcp.js", "types": "./dist/mcp.d.ts" },
+    "./core": { "import": "./dist/core/index.js", "types": "./dist/core/index.d.ts" }
+  },
+  "files": ["dist", "openclaw.plugin.json", "skills", "migrations"],
+  "publishConfig": { "access": "public" },
+  "repository": { "type": "git", "url": "https://github.com/raijinlabs/lucid-meet.git" },
+  "keywords": ["openclaw", "mcp", "plugin", "meeting", "notes", "transcription", "action-items", "calendar", "productivity"],
+  "author": "RaijinLabs",
+  "openclaw": { "extensions": ["./src/index.ts"] },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/ test/ --ext .ts",
+    "lint:fix": "eslint src/ test/ --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "@sinclair/typebox": "^0.32.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "bottleneck": "^2.19.5",
+    "croner": "^8.1.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "prettier": "^3.3.0",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": { "node": ">=18.0.0" },
+  "license": "MIT"
+}
