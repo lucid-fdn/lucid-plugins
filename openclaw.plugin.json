@@ -1,0 +1,10 @@
+{
+  "id": "lucid-metrics",
+  "name": "Lucid Metrics",
+  "version": "1.0.0",
+  "description": "Product analytics intelligence — event tracking, funnel analysis, retention cohorts, feature adoption, and A/B test insights",
+  "author": "RaijinLabs",
+  "repository": "https://github.com/raijinlabs/lucid-metrics",
+  "entry": "./dist/index.js",
+  "configSchema": "./dist/core/config/schema.js"
+}
