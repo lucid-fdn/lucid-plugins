@@ -8,9 +8,15 @@ license: "MIT"
 requires:
   mcps: []
   env:
-    - VIDEO_ENGINE_URL
+    - VIDEO_ENGINE_URL  # required — rendering engine base URL
+  env_optional:
+    - VIDEO_ENGINE_API_KEY
     - VIDEO_SUPABASE_URL
     - VIDEO_SUPABASE_KEY
+    - VIDEO_TENANT_ID
+    - VIDEO_DEFAULT_PRIORITY
+    - VIDEO_DEFAULT_FORMAT
+    - VIDEO_DEFAULT_RESOLUTION
 
 skills:
   - social-content

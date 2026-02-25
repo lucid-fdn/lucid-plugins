@@ -66,7 +66,7 @@ Once the MCP server is running, an AI agent can:
 
 The plugin does NOT include Remotion rendering — it calls a rendering engine API over HTTP. You need to deploy a rendering engine separately. The engine is a Fastify service on Railway that runs Remotion's bundler and renderer.
 
-See the design doc at `docs/plans/2026-02-25-lucid-video-design.md` for the rendering engine specification.
+See [Deployment Guide](deployment.md) for complete engine setup and deployment instructions across all 3 layers.
 
 ## Development
 

@@ -83,6 +83,8 @@ Other Lucid plugins can generate videos by emitting a VideoBrief:
 | `VIDEO_SUPABASE_KEY` | No | Supabase service key |
 | `VIDEO_TENANT_ID` | No | Tenant ID (default: "default") |
 | `VIDEO_DEFAULT_PRIORITY` | No | Default render priority (default: "standard") |
+| `VIDEO_DEFAULT_FORMAT` | No | Default output format (default: "mp4") |
+| `VIDEO_DEFAULT_RESOLUTION` | No | Default output resolution (default: "1080p") |
 
 ## Architecture
 
