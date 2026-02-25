@@ -4,6 +4,7 @@
 
 import type { PluginConfig } from '../config.js';
 import type { AdapterRegistry } from '../adapters/registry.js';
+import { createTaTools } from './technical-analysis.js';
 
 // -- Tool type definitions ---------------------------------------------------
 
@@ -39,8 +40,9 @@ export interface ToolDependencies {
 
 /**
  * Instantiate every tool the trade MCP exposes.
- * Returns an empty array for now — tools will be added in Phase 2/3.
  */
-export function createAllTools(_deps: ToolDependencies): ToolDefinition[] {
-  return [];
+export function createAllTools(deps: ToolDependencies): ToolDefinition[] {
+  return [
+    ...createTaTools(deps.registry),
+  ];
 }
