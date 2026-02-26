@@ -1,5 +1,5 @@
 {
   "name": "lucid-audit",
-  "description": "Smart contract security — vulnerability detection, gas optimization, access control review, reentrancy checks, security scoring",
-  "version": "1.0.0"
+  "description": "Smart contract security brain — AI-powered vulnerability detection, gas optimization, security scoring with structured verdicts (SAFE/CAUTION/RISKY/CRITICAL) across 7 EVM chains",
+  "version": "2.0.0"
 }

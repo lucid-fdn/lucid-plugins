@@ -13,7 +13,12 @@ requires:
     - AUDIT_SUPABASE_KEY
     - AUDIT_ETHERSCAN_API_KEY
 
-skills: []
+skills:
+  - lucid_audit
+  - lucid_audit_compare
+  - lucid_audit_batch
+  - lucid_gas
+  - lucid_audit_pro
 
 platforms:
   claude-code: true

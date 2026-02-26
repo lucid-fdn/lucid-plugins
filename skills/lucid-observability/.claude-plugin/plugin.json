@@ -1,5 +1,5 @@
 {
   "name": "lucid-observability",
-  "description": "Production observability skills: triage, incident response, correlation, billing health, conventions, alerting",
-  "version": "4.0.0"
+  "description": "Production observability intelligence with brain layer — incident triage, severity scoring, temporal pattern detection, production readiness checks, and outbox health analysis",
+  "version": "5.0.0"
 }

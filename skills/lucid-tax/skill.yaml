@@ -14,7 +14,26 @@ requires:
     - TAX_ETHERSCAN_API_KEY
     - TAX_COINGECKO_API_KEY
 
-skills: []
+skills:
+  # Core tools (12)
+  - tax_import_wallet
+  - tax_classify_transactions
+  - tax_calculate_gains
+  - tax_get_summary
+  - tax_generate_report
+  - tax_find_harvesting
+  - tax_get_cost_basis
+  - tax_track_income
+  - tax_compare_methods
+  - tax_get_unrealized
+  - tax_audit_transactions
+  - tax_status
+  # Brain tools (5)
+  - lucid_tax_analyze
+  - lucid_tax_optimize
+  - lucid_tax_harvest
+  - lucid_tax_health
+  - lucid_tax_pro
 
 platforms:
   claude-code: true
