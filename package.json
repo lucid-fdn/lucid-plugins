@@ -4,7 +4,8 @@
   "private": true,
   "description": "Open-source AgentSkills plugin collection for the Lucid AI platform",
   "workspaces": [
-    "skills/*"
+    "skills/*",
+    "packages/*"
   ],
   "scripts": {
     "validate": "bash scripts/validate-all.sh",

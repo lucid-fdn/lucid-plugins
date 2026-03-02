@@ -15,7 +15,7 @@ skills/
   lucid-audit/            # Smart contract security v2.0 — brain layer (5 AI tools)
   lucid-bridge/           # Startup ops integration (Notion/Linear/Slack/GitHub)
   lucid-compete/          # Competitive intelligence
-  lucid-defi/             # DeFi protocols
+  lucid-defi/             # DeFi protocols (pure markdown, no MCP server)
   lucid-feedback/         # Customer feedback/NPS/CSAT
   lucid-hype/             # Growth hacking / social promotion
   lucid-invoice/          # Billing / revenue management
@@ -31,6 +31,8 @@ skills/
   lucid-tax/              # Crypto tax compliance v2.0 — brain layer (5 AI tools)
   lucid-trade/            # Crypto trading intelligence v5.0 — 7 sub-skills
   lucid-veille/           # Content monitoring + auto-publishing v4.0
+packages/
+  embedded/               # @raijinlabs/lucid-skills-embedded — all 18 MCP factories bundled (14.9MB)
 templates/
   skill-template/         # Starter for new plugins
 scripts/
@@ -44,6 +46,15 @@ Two formats coexist:
 - **Brain Layer pattern** (lucid-predict, lucid-trade, lucid-audit, lucid-tax, lucid-observability, lucid-quantum): `src/brain/` with types, analysis, tools, formatter
 
 Both formats include a `package.json` and `skills/` directory with domain knowledge.
+
+## Embedded Bundle
+`packages/embedded/` — `@raijinlabs/lucid-skills-embedded`
+- Re-exports all 18 MCP server factories (`createXxxServer()`) from TypeScript skills
+- tsup bundles all skills into single ESM file (`noExternal: [/@raijinlabs\/.*/]`)
+- Only `@modelcontextprotocol/sdk` remains external (peer dep)
+- Used by LucidMerged worker for in-process plugin execution via InMemoryTransport
+- Build: `cd packages/embedded && npm run build`
+- lucid-defi is excluded (pure markdown, no MCP server)
 
 ## Conventions
 - Each `skills/<name>/` is an independent npm-publishable package
