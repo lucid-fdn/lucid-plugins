@@ -1,15 +1,21 @@
 {
   "name": "@raijinlabs/lucid-skills-embedded",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "All lucid-skills MCP server factories bundled for in-process embedding",
   "type": "module",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup"
   },
   "peerDependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "dependencies": {
+    "jsdom": "^24.1.0",
+    "cheerio": "^1.0.0"
   },
   "devDependencies": {
     "@raijinlabs/trade": "*",
