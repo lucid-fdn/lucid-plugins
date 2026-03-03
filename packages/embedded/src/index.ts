@@ -11,7 +11,10 @@
  *   // Connect via InMemoryTransport for in-process execution
  */
 
-export const VERSION = '1.3.0'
+export const VERSION = '1.4.0'
+
+// Registry for managing embedded MCP servers
+export { EmbeddedRegistry } from './registry.js'
 
 export { createAuditServer } from '@raijinlabs/audit'
 export { createBridgeServer } from '@raijinlabs/bridge'
