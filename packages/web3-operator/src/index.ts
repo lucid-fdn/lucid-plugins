@@ -29,6 +29,23 @@ export { toolBridge } from './action/index.js'
 
 // ── Shared ──────────────────────────────────────────────────────────
 export { SOLANA_TOKEN_MAP, EVM_TOKEN_MAP, EVM_CHAIN_IDS, resolveTokenAddress } from './shared/token-constants.js'
+export {
+  PROVIDERS,
+  FALLBACK_CHAINS,
+  providerUrl,
+  getFallbackChain,
+  withFallback,
+  getProviderHealth,
+  resetBreaker,
+  jupiter,
+  dexscreener,
+  zerox,
+  helius,
+  debridge,
+  buildHostLimits,
+  warnIfMissing,
+} from './shared/providers.js'
+export type { ProviderId, Capability } from './shared/providers.js'
 
 // ── Config ──────────────────────────────────────────────────────────
 export { initWeb3Operator, getConfig, isInitialized } from './config.js'

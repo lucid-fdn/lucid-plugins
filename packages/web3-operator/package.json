@@ -1,6 +1,6 @@
 {
   "name": "@lucid-fdn/web3-operator",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Simulation-first Web3 operator tools — Read, Reason, Act",
   "type": "module",
   "main": "./dist/index.js",
