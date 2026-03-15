@@ -33,6 +33,8 @@ skills/
   lucid-veille/           # Content monitoring + auto-publishing v4.0
 packages/
   embedded/               # @lucid-fdn/skills-embedded — all 18 MCP factories bundled (14.9MB)
+  web3-operator/          # @lucid-fdn/web3-operator — 12 web3 tools (read/reason/action) + providers + config
+  web3-types/             # @lucid-fdn/web3-types — pure TypeScript interfaces (zero deps)
 templates/
   skill-template/         # Starter for new plugins
 scripts/
