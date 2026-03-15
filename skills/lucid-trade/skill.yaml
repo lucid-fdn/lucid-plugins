@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-trade
 version: "5.0.0"
 description: "Crypto trading intelligence with 7 brain tools: technical analysis, position sizing, risk management, backtesting, portfolio tracking"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:

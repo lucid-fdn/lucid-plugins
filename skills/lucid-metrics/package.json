@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/metrics",
+  "name": "@lucid-fdn/metrics",
   "version": "1.0.0",
   "description": "Product analytics intelligence — event tracking, funnel analysis, retention cohorts, feature adoption, and A/B test insights — MCP server + OpenClaw plugin",
   "type": "module",
@@ -13,9 +13,9 @@
   },
   "files": ["dist", "openclaw.plugin.json", "skills", "migrations"],
   "publishConfig": { "access": "public" },
-  "repository": { "type": "git", "url": "https://github.com/raijinlabs/lucid-metrics.git" },
+  "repository": { "type": "git", "url": "https://github.com/lucid-fdn/lucid-metrics.git" },
   "keywords": ["openclaw", "mcp", "plugin", "analytics", "product", "metrics", "funnel", "retention", "events"],
-  "author": "RaijinLabs",
+  "author": "Lucid",
   "openclaw": { "extensions": ["./src/index.ts"] },
   "scripts": {
     "build": "tsup",

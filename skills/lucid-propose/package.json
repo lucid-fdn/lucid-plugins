@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/propose",
+  "name": "@lucid-fdn/propose",
   "version": "0.1.0",
   "description": "Lucid Propose — AI-powered RFP & proposal engine MCP",
   "type": "module",

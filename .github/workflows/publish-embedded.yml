@@ -1,7 +1,7 @@
-# Publishes @raijinlabs/lucid-skills-embedded to GitHub Packages
+# Publishes @lucid-fdn/skills-embedded to GitHub Packages
 # Triggered on push to main when packages/embedded/** changes,
 # or manually via workflow_dispatch.
-name: Publish @raijinlabs/lucid-skills-embedded
+name: Publish @lucid-fdn/skills-embedded
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com
-          scope: '@raijinlabs'
+          scope: '@lucid-fdn'
 
       - name: Install dependencies
         run: npm ci

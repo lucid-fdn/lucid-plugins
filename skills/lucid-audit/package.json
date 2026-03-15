@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/audit",
+  "name": "@lucid-fdn/audit",
   "version": "2.0.0",
   "description": "Lucid Audit — Smart Contract Security MCP: AI brain layer with verdicts, vulnerability detection, gas optimization, access control review, and security scoring",
   "type": "module",

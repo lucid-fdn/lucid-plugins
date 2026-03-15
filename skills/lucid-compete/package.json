@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/compete",
+  "name": "@lucid-fdn/compete",
   "version": "1.0.0",
   "description": "Competitive intelligence monitoring, AI battle cards, and real-time alerts — OpenClaw plugin + MCP server",
   "type": "module",
@@ -15,9 +15,9 @@
   },
   "files": ["dist", "openclaw.plugin.json", "skills", "migrations"],
   "publishConfig": { "access": "public" },
-  "repository": { "type": "git", "url": "https://github.com/raijinlabs/lucid-compete.git" },
+  "repository": { "type": "git", "url": "https://github.com/lucid-fdn/lucid-compete.git" },
   "keywords": ["openclaw", "mcp", "plugin", "competitive-intelligence", "battle-cards", "monitoring", "ai"],
-  "author": "RaijinLabs",
+  "author": "Lucid",
   "openclaw": { "extensions": ["./src/index.ts"] },
   "scripts": {
     "build": "tsup",

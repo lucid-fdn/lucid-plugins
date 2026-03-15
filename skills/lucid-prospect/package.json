@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/prospect",
+  "name": "@lucid-fdn/prospect",
   "version": "1.0.0",
   "description": "AI-powered lead generation, company enrichment, email discovery, lead scoring, and sales pipeline intelligence — MCP server + OpenClaw plugin",
   "type": "module",
@@ -15,9 +15,9 @@
   },
   "files": ["dist", "openclaw.plugin.json", "skills", "migrations"],
   "publishConfig": { "access": "public" },
-  "repository": { "type": "git", "url": "https://github.com/raijinlabs/lucid-prospect.git" },
+  "repository": { "type": "git", "url": "https://github.com/lucid-fdn/lucid-prospect.git" },
   "keywords": ["openclaw", "mcp", "plugin", "leads", "sales", "enrichment", "prospecting", "email", "crm"],
-  "author": "RaijinLabs",
+  "author": "Lucid",
   "openclaw": { "extensions": ["./src/index.ts"] },
   "scripts": {
     "build": "tsup",

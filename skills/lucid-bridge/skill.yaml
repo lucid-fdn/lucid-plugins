@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-bridge
 version: "1.0.0"
 description: "Cross-platform startup ops — Notion, Linear, Slack, GitHub, Jira integration and sync"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:

@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-metrics
 version: "1.0.0"
 description: "Product analytics — event tracking, funnel analysis, retention cohorts, A/B tests"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:

@@ -1,11 +1,11 @@
-# @raijinlabs/lucid-skills-embedded
+# @lucid-fdn/skills-embedded
 
 All 18 Lucid Skills MCP server factories bundled for in-process embedding via InMemoryTransport. Zero network overhead — tool calls execute in ~1-5ms.
 
 ## Install
 
 ```bash
-npm install @raijinlabs/lucid-skills-embedded @modelcontextprotocol/sdk
+npm install @lucid-fdn/skills-embedded @modelcontextprotocol/sdk
 ```
 
 ## Quick Start
@@ -15,7 +15,7 @@ import {
   EmbeddedRegistry,
   createTradeServer,
   createPredictServer,
-} from '@raijinlabs/lucid-skills-embedded'
+} from '@lucid-fdn/skills-embedded'
 
 // 1. Create registry
 const registry = new EmbeddedRegistry()

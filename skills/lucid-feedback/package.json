@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/feedback",
+  "name": "@lucid-fdn/feedback",
   "version": "1.0.0",
   "description": "Customer feedback collection, sentiment analysis, NPS tracking, and trend detection — MCP server + OpenClaw plugin",
   "type": "module",
@@ -15,9 +15,9 @@
   },
   "files": ["dist", "openclaw.plugin.json", "skills", "migrations"],
   "publishConfig": { "access": "public" },
-  "repository": { "type": "git", "url": "https://github.com/raijinlabs/lucid-feedback.git" },
+  "repository": { "type": "git", "url": "https://github.com/lucid-fdn/lucid-feedback.git" },
   "keywords": ["openclaw", "mcp", "plugin", "feedback", "nps", "survey", "sentiment", "reviews", "customer-voice"],
-  "author": "RaijinLabs",
+  "author": "Lucid",
   "openclaw": { "extensions": ["./src/index.ts"] },
   "scripts": {
     "build": "tsup",

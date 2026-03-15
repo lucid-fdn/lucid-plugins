@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/video",
+  "name": "@lucid-fdn/video",
   "version": "1.0.0",
   "description": "Agent-native video generation using Remotion — MCP server + OpenClaw plugin",
   "type": "module",
@@ -33,14 +33,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/raijinlabs/lucid-skills.git",
+    "url": "https://github.com/lucid-fdn/lucid-skills.git",
     "directory": "skills/lucid-video"
   },
   "keywords": [
     "openclaw", "mcp", "plugin", "video", "remotion",
     "rendering", "ai", "agent", "lucid"
   ],
-  "author": "RaijinLabs",
+  "author": "Lucid",
   "openclaw": {
     "extensions": ["./src/index.ts"]
   },

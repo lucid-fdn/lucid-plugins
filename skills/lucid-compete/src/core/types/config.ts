@@ -4,7 +4,7 @@
 
 import type { Severity } from './common.js';
 
-/** Configuration for the @raijinlabs/compete plugin. */
+/** Configuration for the @lucid-fdn/compete plugin. */
 export interface PluginConfig {
   /** Supabase project URL. */
   supabaseUrl: string;

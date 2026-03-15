@@ -13,8 +13,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/raijinlabs/lucid-skills.git"
+    "url": "https://github.com/lucid-fdn/lucid-skills.git"
   },
   "license": "MIT",
-  "author": "RaijinLabs <contact@raijinlabs.com>"
+  "author": "Lucid <contact@lucid.com>"
 }

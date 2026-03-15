@@ -6,9 +6,9 @@ export default defineConfig({
   target: 'node20',
   outDir: 'dist',
   clean: true,
-  // Bundle all @raijinlabs/* skill packages into a single file.
+  // Bundle all @lucid-fdn/* skill packages into a single file.
   // @modelcontextprotocol/sdk remains external (peer dep).
-  noExternal: [/@raijinlabs\/.*/],
+  noExternal: [/@lucid-fdn\/.*/],
   // Packages with native workers or heavy native bindings must stay external.
   external: ['jsdom', 'cheerio'],
   // Provide a real CJS `require` for bundled CJS packages (e.g. @notionhq/client).

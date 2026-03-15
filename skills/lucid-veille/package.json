@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/veille",
+  "name": "@lucid-fdn/veille",
   "version": "1.0.0",
   "description": "Content monitoring, AI digest generation, and auto-publishing — OpenClaw plugin + MCP server",
   "type": "module",
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/raijinlabs/lucid-veille.git"
+    "url": "https://github.com/lucid-fdn/lucid-veille.git"
   },
   "keywords": [
     "openclaw",
@@ -46,7 +46,7 @@
     "rss",
     "content"
   ],
-  "author": "RaijinLabs",
+  "author": "Lucid",
   "openclaw": {
     "extensions": [
       "./src/index.ts"

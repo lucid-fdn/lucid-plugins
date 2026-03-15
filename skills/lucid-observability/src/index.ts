@@ -1,5 +1,5 @@
 // ---------------------------------------------------------------------------
-// index.ts -- Barrel exports for @raijinlabs/observability
+// index.ts -- Barrel exports for @lucid-fdn/observability
 // ---------------------------------------------------------------------------
 
 // Default export: OpenClaw plugin registration

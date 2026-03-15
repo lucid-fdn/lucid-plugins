@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/quantum",
+  "name": "@lucid-fdn/quantum",
   "version": "1.0.0",
   "description": "Lucid Quantum — Distributed GPU key search intelligence: fleet orchestration, target triage, wallet fingerprinting, mode optimization, brain wallet strategy, and autonomous agent playbooks",
   "type": "module",

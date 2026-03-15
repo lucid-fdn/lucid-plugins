@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-propose
 version: "0.1.0"
 description: "RFP and proposal engine — AI-powered proposal generation"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:

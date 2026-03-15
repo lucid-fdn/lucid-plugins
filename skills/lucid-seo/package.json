@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/seo",
+  "name": "@lucid-fdn/seo",
   "version": "1.0.0",
   "description": "AI-powered SEO intelligence — keyword research, SERP analysis, content optimization, backlink monitoring, technical audits, and competitive intelligence — MCP server + OpenClaw plugin",
   "type": "module",
@@ -15,9 +15,9 @@
   },
   "files": ["dist", "openclaw.plugin.json", "skills", "migrations"],
   "publishConfig": { "access": "public" },
-  "repository": { "type": "git", "url": "https://github.com/raijinlabs/lucid-seo.git" },
+  "repository": { "type": "git", "url": "https://github.com/lucid-fdn/lucid-seo.git" },
   "keywords": ["openclaw", "mcp", "plugin", "seo", "serp", "keywords", "backlinks", "content", "ranking"],
-  "author": "RaijinLabs",
+  "author": "Lucid",
   "openclaw": { "extensions": ["./src/index.ts"] },
   "scripts": {
     "build": "tsup",

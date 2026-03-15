@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-compete
 version: "1.0.0"
 description: "Competitive intelligence — monitoring, AI battle cards, real-time alerts"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:

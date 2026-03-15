@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/trade",
+  "name": "@lucid-fdn/trade",
   "version": "5.0.0",
   "description": "Lucid Trade — Universal Crypto Trading MCP: multi-exchange market data, technical analysis, position management, risk engine, and backtesting",
   "type": "module",

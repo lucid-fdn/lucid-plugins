@@ -2,7 +2,7 @@
   "name": "SKILL_NAME",
   "version": "1.0.0",
   "description": "SKILL_DESCRIPTION",
-  "author": "RaijinLabs",
+  "author": "Lucid",
   "license": "MIT",
   "skills": ["skills/SKILL_NAME/SKILL.md"]
 }

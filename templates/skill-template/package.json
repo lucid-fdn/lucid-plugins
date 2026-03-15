@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "SKILL_DESCRIPTION",
   "license": "MIT",
-  "author": "RaijinLabs <contact@raijinlabs.com>",
+  "author": "Lucid <contact@lucid.com>",
   "keywords": ["lucid", "agentskills", "ai", "SKILL_NAME"],
   "files": ["skills/", "skill.yaml", "openclaw.plugin.json", "HEARTBEAT.md", "README.md"]
 }

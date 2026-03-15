@@ -2,7 +2,7 @@
   "name": "lucid-video",
   "version": "1.0.0",
   "description": "Agent-native video generation using Remotion",
-  "author": "RaijinLabs",
+  "author": "Lucid",
   "license": "MIT",
   "skills": [
     "skills/social-content/SKILL.md",

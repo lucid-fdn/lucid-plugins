@@ -1,5 +1,5 @@
 // ---------------------------------------------------------------------------
-// index.ts -- Barrel exports for @raijinlabs/quantum
+// index.ts -- Barrel exports for @lucid-fdn/quantum
 // ---------------------------------------------------------------------------
 
 // Default export: OpenClaw plugin registration

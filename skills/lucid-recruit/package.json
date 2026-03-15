@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/recruit",
+  "name": "@lucid-fdn/recruit",
   "version": "1.0.0",
   "description": "Lucid Recruit — AI-powered ATS & hiring pipeline MCP plugin",
   "type": "module",
@@ -29,7 +29,7 @@
     "mcp",
     "lucid"
   ],
-  "author": "RaijinLabs",
+  "author": "Lucid",
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",

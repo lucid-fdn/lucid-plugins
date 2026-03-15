@@ -1,5 +1,5 @@
 // ---------------------------------------------------------------------------
-// index.ts -- Barrel exports for @raijinlabs/predict
+// index.ts -- Barrel exports for @lucid-fdn/predict
 // ---------------------------------------------------------------------------
 
 // Default export: OpenClaw plugin registration

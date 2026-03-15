@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-feedback
 version: "1.0.0"
 description: "Customer feedback — sentiment analysis, NPS tracking, trend detection"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:

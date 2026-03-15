@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-tax
 version: "2.0.0"
 description: "Crypto tax compliance — AI brain layer with verdicts (OPTIMIZE/COMPLIANT/ACTION_NEEDED/AUDIT_RISK), cost-basis calculation, tax-loss harvesting, multi-method optimization"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:

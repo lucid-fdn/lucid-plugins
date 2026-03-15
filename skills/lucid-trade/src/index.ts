@@ -1,5 +1,5 @@
 // ---------------------------------------------------------------------------
-// index.ts -- Barrel exports for @raijinlabs/trade
+// index.ts -- Barrel exports for @lucid-fdn/trade
 // ---------------------------------------------------------------------------
 
 // Default export: OpenClaw plugin registration

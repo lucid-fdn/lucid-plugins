@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/bridge",
+  "name": "@lucid-fdn/bridge",
   "version": "1.0.0",
   "description": "Lucid Bridge — Cross-Platform Startup Ops MCP",
   "type": "module",

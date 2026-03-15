@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-invoice
 version: "1.0.0"
 description: "Smart billing — revenue management, Stripe and PayPal integration"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:

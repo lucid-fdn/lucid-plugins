@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/meet",
+  "name": "@lucid-fdn/meet",
   "version": "1.0.0",
   "description": "AI-powered meeting notes, action item extraction, decision tracking, follow-up automation, and meeting analytics — MCP server + OpenClaw plugin",
   "type": "module",
@@ -15,9 +15,9 @@
   },
   "files": ["dist", "openclaw.plugin.json", "skills", "migrations"],
   "publishConfig": { "access": "public" },
-  "repository": { "type": "git", "url": "https://github.com/raijinlabs/lucid-meet.git" },
+  "repository": { "type": "git", "url": "https://github.com/lucid-fdn/lucid-meet.git" },
   "keywords": ["openclaw", "mcp", "plugin", "meeting", "notes", "transcription", "action-items", "calendar", "productivity"],
-  "author": "RaijinLabs",
+  "author": "Lucid",
   "openclaw": { "extensions": ["./src/index.ts"] },
   "scripts": {
     "build": "tsup",

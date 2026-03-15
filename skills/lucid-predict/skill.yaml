@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-predict
 version: "5.0.0"
 description: "Edge Hunter — prediction market intelligence with 7 brain tools: EV analysis, Kelly sizing, cross-platform arbitrage, Bayesian calibration"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:

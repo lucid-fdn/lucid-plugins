@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-quantum
 version: "1.0.0"
 description: "Bitcoin quantum-safe key search intelligence with 9 brain tools: fleet orchestration, target triage, wallet fingerprinting, mode optimization, brain wallet strategy, temporal narrowing, cost analysis, auto-optimize, and monitoring"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:

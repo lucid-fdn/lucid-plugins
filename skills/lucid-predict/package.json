@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/predict",
+  "name": "@lucid-fdn/predict",
   "version": "5.0.0",
   "description": "Lucid Predict — Prediction market edge detection: EV analysis, Kelly sizing, cross-platform arbitrage, calibration tracking",
   "type": "module",

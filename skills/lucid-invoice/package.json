@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/invoice",
+  "name": "@lucid-fdn/invoice",
   "version": "1.0.0",
   "description": "Lucid Invoice — Smart Billing & Revenue MCP for startups and freelancers",
   "type": "module",
@@ -32,7 +32,7 @@
     "mcp",
     "lucid"
   ],
-  "author": "RaijinLabs",
+  "author": "Lucid",
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",

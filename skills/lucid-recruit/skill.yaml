@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-recruit
 version: "1.0.0"
 description: "ATS and hiring pipeline — Greenhouse, Lever, LinkedIn integration"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:

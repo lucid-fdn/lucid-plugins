@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/observability",
+  "name": "@lucid-fdn/observability",
   "version": "5.0.0",
   "description": "Observability intelligence — incident triage, severity scoring, pattern detection, production readiness checks",
   "type": "module",
@@ -18,7 +18,7 @@
   "author": "Lucid Foundation",
   "repository": {
     "type": "git",
-    "url": "https://github.com/raijinlabs/lucid-skills"
+    "url": "https://github.com/lucid-fdn/lucid-skills"
   },
   "keywords": [
     "agentskills",

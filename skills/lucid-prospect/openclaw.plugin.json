@@ -3,7 +3,7 @@
   "name": "Lucid Prospect",
   "version": "1.0.0",
   "description": "AI-powered lead generation, company enrichment, email discovery, lead scoring, and sales pipeline intelligence",
-  "author": "RaijinLabs",
+  "author": "Lucid",
   "license": "MIT",
   "entry": "./dist/openclaw.js",
   "tools": [

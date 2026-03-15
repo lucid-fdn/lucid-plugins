@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-prospect
 version: "1.0.0"
 description: "Sales prospecting — lead discovery, company enrichment, email discovery, lead scoring"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:

@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-seo
 version: "1.0.0"
 description: "SEO intelligence — keyword research, SERP analysis, content optimization, backlink monitoring"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:

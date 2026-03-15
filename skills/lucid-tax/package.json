@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/tax",
+  "name": "@lucid-fdn/tax",
   "version": "2.0.0",
   "description": "Lucid Tax — Crypto Tax & DeFi Accounting MCP: AI brain layer with verdicts, cost-basis optimization, tax-loss harvesting, multi-jurisdiction support",
   "type": "module",

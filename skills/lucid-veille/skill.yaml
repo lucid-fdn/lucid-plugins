@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-veille
 version: "1.0.0"
 description: "Content monitoring — AI digest generation, auto-publishing across platforms"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:

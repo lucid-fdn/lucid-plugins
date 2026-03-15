@@ -1,5 +1,5 @@
 {
-  "name": "@raijinlabs/lucid-skills-embedded",
+  "name": "@lucid-fdn/skills-embedded",
   "version": "1.4.0",
   "description": "All lucid-skills MCP server factories bundled for in-process embedding",
   "type": "module",
@@ -18,30 +18,31 @@
     "cheerio": "^1.0.0"
   },
   "devDependencies": {
-    "@raijinlabs/trade": "*",
-    "@raijinlabs/predict": "*",
-    "@raijinlabs/quantum": "*",
-    "@raijinlabs/seo": "*",
-    "@raijinlabs/audit": "*",
-    "@raijinlabs/tax": "*",
-    "@raijinlabs/veille": "*",
-    "@raijinlabs/hype": "*",
-    "@raijinlabs/compete": "*",
-    "@raijinlabs/prospect": "*",
-    "@raijinlabs/recruit": "*",
-    "@raijinlabs/bridge": "*",
-    "@raijinlabs/meet": "*",
-    "@raijinlabs/invoice": "*",
-    "@raijinlabs/propose": "*",
-    "@raijinlabs/metrics": "*",
-    "@raijinlabs/feedback": "*",
-    "@raijinlabs/video": "*",
-    "@raijinlabs/observability": "*",
+    "@lucid-fdn/trade": "*",
+    "@lucid-fdn/predict": "*",
+    "@lucid-fdn/quantum": "*",
+    "@lucid-fdn/seo": "*",
+    "@lucid-fdn/audit": "*",
+    "@lucid-fdn/tax": "*",
+    "@lucid-fdn/veille": "*",
+    "@lucid-fdn/hype": "*",
+    "@lucid-fdn/compete": "*",
+    "@lucid-fdn/prospect": "*",
+    "@lucid-fdn/recruit": "*",
+    "@lucid-fdn/bridge": "*",
+    "@lucid-fdn/meet": "*",
+    "@lucid-fdn/invoice": "*",
+    "@lucid-fdn/propose": "*",
+    "@lucid-fdn/metrics": "*",
+    "@lucid-fdn/feedback": "*",
+    "@lucid-fdn/video": "*",
+    "@lucid-fdn/observability": "*",
     "tsup": "^8.4.0",
     "typescript": "^5.6.0"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "license": "MIT"
 }

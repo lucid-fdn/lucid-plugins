@@ -3,7 +3,7 @@
   "name": "Lucid Compete",
   "version": "1.0.0",
   "description": "Competitive intelligence monitoring, AI battle cards, and real-time alerts",
-  "author": "RaijinLabs",
+  "author": "Lucid",
   "configSchema": {
     "type": "object",
     "properties": {

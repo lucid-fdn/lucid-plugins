@@ -2,7 +2,7 @@ lucid: "1.0"
 name: lucid-hype
 version: "0.1.0"
 description: "Growth hacking — viral content generation, social promotion, personality engines"
-author: "RaijinLabs"
+author: "Lucid"
 license: "MIT"
 
 requires:
