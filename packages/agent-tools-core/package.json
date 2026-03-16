@@ -1,0 +1,32 @@
+{
+  "name": "@lucid-fdn/agent-tools-core",
+  "version": "0.2.0",
+  "description": "Portable foundation for defining AI agent tools with rich metadata and auto-generated prompts",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.6.0",
+    "vitest": "^3.2.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucid-fdn/lucid-skills.git",
+    "directory": "packages/agent-tools-core"
+  },
+  "keywords": ["ai", "agent", "tools", "llm", "prompt", "mcp"]
+}
