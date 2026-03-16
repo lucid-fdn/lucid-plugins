@@ -1,0 +1,79 @@
+# Publishes @lucid-fdn packages to npm on version bump.
+# Triggered on push to main when packages/**  changes,
+# or manually via workflow_dispatch.
+#
+# Each package is published independently — only changed packages are published.
+# Requires NPM_TOKEN secret with publish access to @lucid-fdn scope.
+name: Publish @lucid-fdn packages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'packages/agent-tools-core/**'
+      - 'packages/web3-operator/**'
+      - 'packages/web3-types/**'
+      - 'packages/content/**'
+      - 'packages/code-interpreter/**'
+  workflow_dispatch:
+    inputs:
+      package:
+        description: 'Package to publish (e.g., agent-tools-core). Leave empty to check all.'
+        required: false
+        type: string
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package:
+          - agent-tools-core
+          - web3-types
+          - web3-operator
+          - content
+          - code-interpreter
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org
+
+      - name: Check if version changed
+        id: version-check
+        working-directory: packages/${{ matrix.package }}
+        run: |
+          LOCAL_VERSION=$(node -p "require('./package.json').version")
+          PUBLISHED_VERSION=$(npm view @lucid-fdn/${{ matrix.package }} version 2>/dev/null || echo "0.0.0")
+          echo "local=$LOCAL_VERSION" >> $GITHUB_OUTPUT
+          echo "published=$PUBLISHED_VERSION" >> $GITHUB_OUTPUT
+          if [ "$LOCAL_VERSION" != "$PUBLISHED_VERSION" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Publishing @lucid-fdn/${{ matrix.package }}@$LOCAL_VERSION (was $PUBLISHED_VERSION)"
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "Skipping @lucid-fdn/${{ matrix.package }}@$LOCAL_VERSION (already published)"
+          fi
+
+      - name: Install dependencies
+        if: steps.version-check.outputs.changed == 'true'
+        run: npm install
+
+      - name: Build package
+        if: steps.version-check.outputs.changed == 'true'
+        working-directory: packages/${{ matrix.package }}
+        run: |
+          if [ -f "tsup.config.ts" ]; then
+            npx tsup
+          else
+            npx tsc
+          fi
+
+      - name: Publish
+        if: steps.version-check.outputs.changed == 'true'
+        working-directory: packages/${{ matrix.package }}
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

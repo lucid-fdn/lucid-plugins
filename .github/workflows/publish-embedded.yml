@@ -8,7 +8,7 @@ on:
     branches: [main]
     paths:
       - 'packages/embedded/**'
-      - 'skills/*/src/**'
+      - 'plugins/*/src/**'
   workflow_dispatch:
 
 jobs:
