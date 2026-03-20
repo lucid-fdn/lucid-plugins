@@ -1,0 +1,8 @@
+{
+  "id": "lucid-moralis",
+  "name": "Lucid Moralis",
+  "version": "1.0.0",
+  "type": "runtime",
+  "category": "trading",
+  "brainLayer": false
+}

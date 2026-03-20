@@ -34,6 +34,7 @@
     "@lucid-fdn/invoice": "*",
     "@lucid-fdn/propose": "*",
     "@lucid-fdn/metrics": "*",
+    "@lucid-fdn/moralis": "*",
     "@lucid-fdn/feedback": "*",
     "@lucid-fdn/video": "*",
     "@lucid-fdn/observability": "*",

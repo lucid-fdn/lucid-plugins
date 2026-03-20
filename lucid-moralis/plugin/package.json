@@ -1,0 +1,22 @@
+{
+  "name": "@lucid-fdn/moralis",
+  "version": "1.0.0",
+  "description": "Moralis blockchain data intelligence MCP server — token security, OHLCV, whale tracking, liquidity",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "moralis": "^2.30.0"
+  },
+  "peerDependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "vitest": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}
