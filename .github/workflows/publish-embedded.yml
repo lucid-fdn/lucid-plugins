@@ -8,7 +8,7 @@ on:
     branches: [main]
     paths:
       - 'packages/embedded/**'
-      - 'plugins/*/src/**'
+      - 'lucid-*/plugin/src/**'
   workflow_dispatch:
 
 jobs:
