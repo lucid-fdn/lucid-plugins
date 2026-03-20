@@ -1,8 +1,0 @@
-{
-  "id": "lucid-moralis",
-  "name": "Lucid EVM Intelligence",
-  "version": "1.0.0",
-  "type": "runtime",
-  "category": "trading",
-  "brainLayer": false
-}
