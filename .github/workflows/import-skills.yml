@@ -1,0 +1,107 @@
+name: Import Skills to Catalog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*/skill/SKILL.md'
+      - '*/skill/references/**'
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Need previous commit to detect changes
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Find changed skills
+        id: changed
+        run: |
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- '*/skill/SKILL.md' '*/skill/references/' | \
+            sed 's|/skill/.*||' | sort -u)
+          echo "skills=$CHANGED" >> $GITHUB_OUTPUT
+          echo "Changed skills: $CHANGED"
+
+      - name: Import changed skills
+        if: steps.changed.outputs.skills != ''
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          # Install deps for the import script (supabase-js, js-yaml)
+          npm install @supabase/supabase-js js-yaml
+
+          for feature in ${{ steps.changed.outputs.skills }}; do
+            SKILL_DIR="$feature/skill"
+            if [ ! -f "$SKILL_DIR/SKILL.md" ]; then
+              echo "SKIP: $feature (no SKILL.md)"
+              continue
+            fi
+
+            echo "Importing: $feature"
+
+            # Inline import script (self-contained, no worker dependency)
+            node --input-type=module << SCRIPT
+            import { createClient } from '@supabase/supabase-js';
+            import { readFileSync, existsSync, readdirSync } from 'fs';
+            import { createHash } from 'crypto';
+            import { load as yamlLoad } from 'js-yaml';
+
+            const skillDir = '${SKILL_DIR}';
+            const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY);
+
+            // Read SKILL.md
+            let raw = readFileSync(skillDir + '/SKILL.md', 'utf-8');
+
+            // Parse frontmatter
+            const fmMatch = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+            const frontmatter = fmMatch ? (yamlLoad(fmMatch[1]) || {}) : {};
+            const body = fmMatch ? fmMatch[2] : raw;
+
+            // Inline references
+            const refsDir = skillDir + '/references';
+            if (existsSync(refsDir)) {
+              const dirs = readdirSync(refsDir, { withFileTypes: true })
+                .filter(d => d.isDirectory()).sort((a, b) => a.name.localeCompare(b.name));
+              for (const dir of dirs) {
+                const refSkill = refsDir + '/' + dir.name + '/SKILL.md';
+                if (existsSync(refSkill)) {
+                  const content = readFileSync(refSkill, 'utf-8');
+                  const refMatch = content.match(/^---\r?\n[\s\S]*?\r?\n---\r?\n([\s\S]*)$/);
+                  raw += '\n\n' + (refMatch ? refMatch[1] : content);
+                }
+              }
+            }
+
+            const slug = frontmatter.name || '${feature}';
+            const name = frontmatter.name || slug;
+            const description = frontmatter.description || '';
+            const hash = createHash('sha256').update(raw).digest('hex');
+
+            const { error } = await supabase.from('skill_catalog').upsert({
+              slug,
+              name,
+              description,
+              raw_content: raw,
+              sanitized_content: body,
+              frontmatter,
+              source: 'manual',
+              source_path: '${feature}/skill/SKILL.md',
+              content_hash: hash,
+              status: 'approved',
+              content_chars: body.length,
+              updated_at: new Date().toISOString(),
+            }, { onConflict: 'slug' });
+
+            if (error) {
+              console.error('FAILED:', slug, error.message);
+              process.exit(1);
+            }
+            console.log('OK:', slug, '(' + body.length + ' chars)');
+            SCRIPT
+          done
