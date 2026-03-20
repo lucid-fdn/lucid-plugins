@@ -14,3 +14,4 @@ Lucid Trade — Universal Crypto Trading MCP: multi-exchange market data, techni
 - [market-analysis](references/market-analysis/SKILL.md)
 - [portfolio](references/portfolio/SKILL.md)
 - [trading](references/trading/SKILL.md)
+
