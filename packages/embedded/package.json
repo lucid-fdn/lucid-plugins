@@ -25,6 +25,7 @@
     "@lucid-fdn/audit": "*",
     "@lucid-fdn/tax": "*",
     "@lucid-fdn/veille": "*",
+    "@lucid-fdn/helius": "*",
     "@lucid-fdn/hype": "*",
     "@lucid-fdn/compete": "*",
     "@lucid-fdn/prospect": "*",
