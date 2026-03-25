@@ -1,6 +1,6 @@
 {
   "name": "@lucid-fdn/plugins-embedded",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "All lucid-plugins MCP server factories bundled for in-process embedding",
   "type": "module",
   "main": "dist/index.js",
